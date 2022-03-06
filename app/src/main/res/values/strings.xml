@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Aplicatie</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="calculator">Calculator</string>
+    <string name="a">a</string>
+    <string name="_9">9</string>
+    <string name="_7">7</string>
+    <string name="_6">6</string>
+    <string name="_5">5</string>
+    <string name="_4">4</string>
+    <string name="b">b</string>
+    <string name="_2">2</string>
+    <string name="_1">1</string>
+    <string name="_3">3</string>
+    <string name="c">c</string>
+    <string name="d">d</string>
+    <string name="_0">0</string>
+    <string name="e">e</string>
+    <string name="baza_10_16">baza 16</string>
+    <string name="f">f</string>
+    <string name="back">back</string>
+    <string name="minus">-</string>
+    <string name="inmultire">*</string>
+    <string name="_8">8</string>
+    <string name="plus">+</string>
+    <string name="egal">=</string>
+    <string name="istoric">Istoric</string>
+    <string name="adresa">Adresa:</string>
+    <string name="subiect">Subiect:</string>
+    <string name="trimite">Trimite</string>
+    <string name="continut">Continut:</string>
+    <string name="logs">Logs</string>
+    <string name="sterge_istoric">Sterge istoric</string>
+    <string name="connect_server_failed">Connect server: failed</string>
+</resources>

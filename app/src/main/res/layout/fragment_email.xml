@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Email">
+
+    <LinearLayout
+        android:id="@+id/Layout"
+        app:layout_constraintVertical_weight="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/CentralLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/labelAdresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/newtegomin"
+                android:text="@string/adresa"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <AutoCompleteTextView
+                android:id="@+id/adresa"
+                android:layout_width="228dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border"
+                android:inputType="textEmailAddress"
+                android:textColor="#231E1E"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/labelAdresa"
+                app:layout_constraintEnd_toEndOf="@id/continutEmail"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/labelAdresa"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.866"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/labelSubiect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/newtegomin"
+                android:text="@string/subiect"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="@id/continutEmail"
+                app:layout_constraintTop_toBottomOf="@id/labelAdresa" />
+
+            <EditText
+                android:id="@+id/subiect"
+                android:layout_width="228dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border"
+                android:inputType="textEmailSubject"
+                android:textColor="#231E1E"
+                android:textSize="20sp"
+                app:cornerRadius="28dp"
+                app:layout_constraintBottom_toBottomOf="@id/labelSubiect"
+                app:layout_constraintEnd_toEndOf="@id/continutEmail"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/labelSubiect"
+                app:layout_constraintTop_toBottomOf="@id/adresa"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/labelContinut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="110dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/newtegomin"
+                android:text="@string/continut"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toTopOf="@id/continutEmail"
+                app:layout_constraintEnd_toStartOf="@+id/trimiteEmail"
+                app:layout_constraintStart_toStartOf="@id/continutEmail"
+                app:layout_constraintTop_toBottomOf="@id/labelSubiect" />
+
+            <ListView
+                android:id="@+id/continutEmail"
+                android:layout_width="347dp"
+                android:layout_height="428dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:transcriptMode="alwaysScroll"
+                android:background="@drawable/border2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/labelContinut" />
+
+            <Button
+                android:id="@+id/trimiteEmail"
+                android:layout_width="120dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/trimite"
+                app:layout_constraintBottom_toBottomOf="@id/labelContinut"
+                app:layout_constraintEnd_toEndOf="@id/continutEmail"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/labelContinut"
+                app:layout_constraintTop_toBottomOf="@id/subiect"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
